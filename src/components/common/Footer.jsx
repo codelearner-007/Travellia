@@ -3,7 +3,7 @@ import ContentLayoutWrapper from "./ContentLayoutWrapper";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { data } from "@/lib/data/homepage-data";
-import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 
 const BRANDS = [
   "/footer/iata.png",
@@ -82,11 +82,11 @@ const Footer = () => {
           {BRANDS.map((brand, index) => {
             return (
               <React.Fragment key={index}>
-                <div className="w-44 h-44 relative">
+                <div className="w-20 h-20 sm:w-25 sm:h-25 md:w-30 md:h-30 lg-w-35 lg:h-35 xl:w-44 xl:h-44  relative">
                   <Image src={brand} alt="brand" fill />
                 </div>
                 {index < BRANDS.length - 1 && (
-                  <div className="bg-gray-800 self-stretch w-0.5" />
+                  <div className="bg-gray-300 sm:bg-gray-800 self-stretch w-0.5" />
                 )}
               </React.Fragment>
             );
@@ -102,7 +102,7 @@ const Footer = () => {
 
         {/* Footer Links and Contact Info */}
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-8 md:gap-10">
             {/* Contact Information */}
             <div>
               <h3 className="text-primary font-bold text-3xl mb-4">
@@ -159,7 +159,7 @@ const Footer = () => {
               placeholder="Email"
               className="h-full w-7/10 px-8 bg-transparent outline-none placeholder:text-lg placeholder:text-gray-600"
             />
-            <Button className="rounded-full h-full w-3/10 text-2xl">
+            <Button className="rounded-full h-full w-3/10 text-xl sm:text-2xl">
               Submit
             </Button>
           </div>

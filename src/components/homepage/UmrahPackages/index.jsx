@@ -53,7 +53,7 @@ const UMRAH_PACKAGES = [
 
 const index = () => {
   return (
-    <section className="pt-5 min-h-screen relative">
+    <section className="py-15 min-h-screen relative">
       <div className="absolute top-0 left-0 w-1/2 h-full">
         <Image
           src={"/home/umrah-package/Madina.jpg"}
@@ -98,7 +98,7 @@ const index = () => {
         <div className="bg-primary h-0.75 w-2/10 mx-auto" />
 
         <div className="flex flex-col gap-3">
-          <span className="text-gray-700 uppercase text-lg md:text-2xl lg:text-3xl mx-auto tracking-wider">
+          <span className="text-gray-700 uppercase text-sm md:text-2xl lg:text-3xl mx-auto tracking-wider">
             affordable{" "}
             <span className="text-2xl text-primary uppercase tracking-wider">
               |
@@ -107,7 +107,7 @@ const index = () => {
             <span className="text-2xl text-primary uppercase tracking-wider">
               |
             </span>{" "}
-            spiritual
+            spiritual journey
           </span>
 
           <p className="text-gray-600 text-base text-center w-[80%] m-auto">
