@@ -39,7 +39,7 @@ const PACKAGES_DATA = [
 const index = () => {
   return (
     <section>
-      <div className="min-h-screen relative flex items-center justify-center">
+      <div className="min-h-[60vh] md-h-[70vh] lg:min-h-[80vh] xl:min-h-screen relative flex items-center justify-center">
         <Image
           src="/home/trending-packages/plane-wing.jpg"
           alt="Plane wing image"
@@ -51,12 +51,12 @@ const index = () => {
             alt="airplane"
             width={200}
             height={200}
-            className="object-cover mx-auto"
+            className="object-cover mx-auto "
           />
-          <h1 className="text-7xl text-gray-800 uppercase text-center font-bold">
+          <h1 className="text-4xl md:text-5xl lg:text-6x xl:ltext-7xl text-gray-800 uppercase text-center font-bold">
             lets make your
           </h1>
-          <h1 className="text-7xl text-primary uppercase text-center font-bold">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl text-primary uppercase text-center font-bold">
             next holiday amazing
           </h1>
         </ContentLayoutWrapper>
@@ -68,7 +68,9 @@ const index = () => {
           ))}
           <div className="w-1/10 mt-6">
             <h4 className="uppercase text-gray-800 text-2xl">trendy</h4>
-            <h1 className="uppercase text-primary text-5xl leading-14 font-bold">our trending tour packagees</h1>
+            <h1 className="uppercase text-primary text-5xl leading-14 font-bold">
+              our trending tour packagees
+            </h1>
           </div>
         </div>
       </div>
