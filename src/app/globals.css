@@ -130,9 +130,9 @@ button:disabled {
 }
 
 .swiper {
-  --swiper-navigation-size: 40px; 
-  --swiper-navigation-color: #fff;  
-  --swiper-navigation-sides-offset: 40px; 
+  --swiper-navigation-size: 40px;
+  --swiper-navigation-color: #fff;
+  --swiper-navigation-sides-offset: 40px;
 }
 
 .swiper-button-next svg,
@@ -140,4 +140,20 @@ button:disabled {
   stroke: var(--swiper-navigation-color);
   stroke-width: 0.5;
   fill: none;
+}
+
+/* This is to hide the navigation buttton fot screen size less than 768 */
+@media (max-width: 767px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+/* This ensure the navigation buttton fot screen size larger than 768 */
+@media (min-width: 786) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block !important;
+  }
 }

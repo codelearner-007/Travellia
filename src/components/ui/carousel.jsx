@@ -27,7 +27,7 @@ const Carousel = ({
         delay: speed,
         disableOnInteraction: false,
       }}
-      navigation={navigation}
+      navigation={navigation ? { enabled: true } : false}
       loop={true}
       className={`w-full h-full absolute top-0 left-0 ${className}`}
     >

@@ -1,24 +1,9 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import ContentLayoutWrapper from "@/components/common/ContentLayoutWrapper";
 import { Button } from "@/components/ui/button";
 import { FaArrowRightLong } from "react-icons/fa6";
 import CarouselWrapper from "@/components/ui/carousel";
 
 export default function Welcome() {
-  const [showNavigation, setShowNavigation] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setShowNavigation(window.innerWidth >= 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const slides = [
     { id: 1, image: "/home/welcome/welcome.jpg" },
     { id: 2, image: "/home/welcome/welcome2.jpg" },
@@ -30,7 +15,7 @@ export default function Welcome() {
       <CarouselWrapper
         slides={slides}
         className={"!absolute"}
-        navigation={showNavigation}
+        navigation={true}
       />
       <ContentLayoutWrapper className="flex flex-col items-center justify-center gap-7 z-10">
         <h2 className="w-full text-center font-bold text-primary tracking-widest text-[clamp(3rem,10vw,12rem)]">
