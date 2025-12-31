@@ -33,6 +33,7 @@ export default function Banner() {
             alt="phone icon"
             width={20}
             height={20}
+            loading="lazy"
             className="rounded-full"
           />
           <p className="text-white text-xs font-medium">Eng</p>

@@ -77,9 +77,9 @@ const index = () => {
                 <div className="flex items-center jus gap-4">
                   <Image
                     src={step.icon}
+                    alt={step.title}
                     width={50}
                     height={50}
-                    alt={step.title}
                   />
                   <h3 className="text-lg md:text-xl font-bold">{step.title}</h3>
                 </div>
@@ -116,10 +116,10 @@ const index = () => {
         >
           <Image
             src="/home/hotel-booking/resort.jpg"
-            fill
             alt="Resort"
-            className="object-cover"
+            fill
             priority
+            className="object-cover"
           />
         </div>
       </ContentLayoutWrapper>

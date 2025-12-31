@@ -38,8 +38,8 @@ const Carousel = ({
               src={slide.image}
               alt={`Tour ${slide.id}`}
               fill
-              className="object-cover"
               priority={slide.id === 1}
+              className="object-cover"
             />
           </div>
         </SwiperSlide>

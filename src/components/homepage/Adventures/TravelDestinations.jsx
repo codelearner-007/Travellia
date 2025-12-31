@@ -36,10 +36,11 @@ const TravelDestinations = () => {
       <div className="hidden sm:block absolute left-1 top-1/4 w-1/2 h-full">
         <Image
           src={"/shapes/bridge.png"}
+          alt="Bridge"
           width={100}
           height={100}
+          loading="lazy"
           className="!w-full !h-full"
-          alt="Bridge"
         />
       </div>
       <ContentLayoutWrapper>

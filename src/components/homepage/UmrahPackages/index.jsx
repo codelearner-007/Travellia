@@ -63,7 +63,7 @@ const index = () => {
         />
       </div>
       <div className="absolute top-0 left-0 w-2/10 h-4/10 z-1">
-        <Image fill src={"/shapes/leaf.png"} alt="leaf" />
+        <Image src={"/shapes/leaf.png"} alt="leaf" fill />
       </div>
       <div className="absolute -bottom-5 right-3 w-2/10 h-4/10 z-1 rotate-180">
         <Image fill src={"/shapes/leaf.png"} alt="leaf" />

@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
-import { useState } from "react";
+import Image from "next/image";
+import { lazy, useState } from "react";
 
 const DestinationCard = ({ destination }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -18,9 +19,11 @@ const DestinationCard = ({ destination }) => {
     >
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
-        <img
+        <Image
           src={destination.image}
           alt={destination.title}
+          fill
+          loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>
