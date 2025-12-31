@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import ContentLayoutWrapper from "./ContentLayoutWrapper";
 import Image from "next/image";
 import { Button } from "../ui/button";
@@ -83,7 +83,7 @@ const Footer = () => {
             return (
               <React.Fragment key={index}>
                 <div className="w-20 h-20 sm:w-25 sm:h-25 md:w-30 md:h-30 lg-w-35 lg:h-35 xl:w-44 xl:h-44  relative">
-                  <Image src={brand} alt="brand" fill />
+                  <Image src={brand} alt="brand" fill loading="lazy" />
                 </div>
                 {index < BRANDS.length - 1 && (
                   <div className="bg-gray-300 sm:bg-gray-800 self-stretch w-0.5" />
@@ -97,7 +97,7 @@ const Footer = () => {
 
         {/* Travellia Logo */}
         <div className="relative w-[96%] mx-auto py-20">
-          <Image src="/logo.png" alt="Travellia Logo" fill />
+          <Image src="/logo.png" alt="Travellia Logo" fill loading="lazy" />
         </div>
 
         {/* Footer Links and Contact Info */}
@@ -176,6 +176,7 @@ const Footer = () => {
                   width={40}
                   height={40}
                   key={index}
+                  loading="lazy"
                 />
               ))}
             </div>
@@ -187,6 +188,7 @@ const Footer = () => {
                   width={50}
                   height={50}
                   key={index}
+                  loading="lazy"
                 />
               ))}
             </div>
@@ -198,7 +200,7 @@ const Footer = () => {
         </div>
       </ContentLayoutWrapper>
       <div className="w-full h-[30vh] lg:h-[75vh] relative">
-        <Image src="/footer/Foot4.png" alt="Footer plane" fill />
+        <Image src="/footer/Foot4.png" alt="Footer plane" fill loading="lazy" />
       </div>
     </footer>
   );

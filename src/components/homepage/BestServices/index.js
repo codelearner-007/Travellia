@@ -66,9 +66,9 @@ export default function OfferedServices() {
       </ContentLayoutWrapper>
       <div className="hidden lg:block w-100 lg:w-1/2 h-full absolute top-0 right-0 z-1">
         <Image
-          fill
           src={"/home/offered-services/about-us.png"}
           alt="About us image"
+          fill
         />
       </div>
     </section>

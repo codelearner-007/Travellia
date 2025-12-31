@@ -50,9 +50,10 @@ const FamilyAdventures = () => {
         fill
         src={"/home/adventure/okl.png"}
         className="absolute top-0 left-0 z-1 "
+        loading="lazy"
       />
       <div className="w-32/30 h-1/4 absolute left-0 top-30 z-1">
-        <Image src={"/shapes/paper-plane.png"} fill />
+        <Image src={"/shapes/paper-plane.png"} fill loading="lazy" />
       </div>
       <ContentLayoutWrapper className={"flex flex-col relative z-2"}>
         <div className="grid grid-cols-1 md:grid-cols-10 grid-rows-1 items-center justify-between h-full gap-6 px-4 md:px-0">
@@ -63,7 +64,7 @@ const FamilyAdventures = () => {
               width={800}
               height={600}
               className="w-full h-auto max-h-[75%] object-contain"
-              unoptimized
+              loading="lazy"
               alt="Family adventure - mobile and plane"
             />
           </div>
@@ -106,8 +107,9 @@ const FamilyAdventures = () => {
                 <div className="relative w-full h-full">
                   <Image
                     src={place.image}
-                    fill
                     alt={place.name}
+                    fill
+                    loading="lazy"
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* Gradient Overlay */}
