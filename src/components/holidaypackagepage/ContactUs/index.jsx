@@ -64,8 +64,10 @@ const BookingDetails_Data = [
 
 const BookingPage = () => {
   return (
-    <section className="pb-{100px} sm:pb-12.5">
-      <ContentLayoutWrapper className="rounded-2xl relative -translate-y-[160px] z-10 h-auto  md:h-[30vh] lg:h-[32vh] border border-amber-300 bg-white">
+    <section className="pb-{100px} sm:pb-12.5 -mt-32 lg:-mt-40">
+      {" "}
+      <ContentLayoutWrapper className="rounded-2xl shadow-2xl relative z-10 h-auto md:h-[30vh] lg:h-[32vh] border border-amber-300 bg-white">
+        {" "}
         {/* Background Image */}
         <div className="">
           <Image
@@ -73,11 +75,12 @@ const BookingPage = () => {
             alt="background"
             fill
             className="absolute inset-0 overflow-hidden rounded-3xl object-cover opacity-30"
+            loading="lazy"
           />
         </div>
-
         {/* Heading Box */}
         <div className="flex flex-col gap-6 sm:gap-4 items-center -translate-y-10">
+          {" "}
           <div className="border border-y-amber-400 sm:border-none relative flex items-center justify-center  gap-3 w-[95%] sm:w-[80%] m-auto  bg-white  px-4 py-3 rounded-lg  ">
             <Image
               src="/holidayPackage/ContactUs/bag.png"
@@ -85,12 +88,12 @@ const BookingPage = () => {
               width={25}
               height={25}
               className=""
+              loading="lazy"
             />
             <h1 className="text-md text-center sm:text-xl ">
               Contact Us to Book your Holiday Package
             </h1>
           </div>
-
           {/* Booking Details Grid */}
           <div className="relative grid grid-cols-1 sm:grid-cols-5 sm:grid-rows-2 md:grid-cols-10 md:grid-rows-2 lg:grid-cols-23 lg:grid-rows-2 gap-4 w-full">
             {BookingDetails_Data.map((card) => (
