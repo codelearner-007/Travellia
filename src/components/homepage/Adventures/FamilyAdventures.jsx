@@ -55,7 +55,7 @@ const FamilyAdventures = () => {
       <div className="w-32/30 h-1/4 absolute left-0 top-30 z-1">
         <Image src={"/shapes/paper-plane.png"} fill loading="lazy" />
       </div>
-      <ContentLayoutWrapper className={"flex flex-col relative z-2"}>
+      <ContentLayoutWrapper className={"flex flex-col gap-5 relative z-2"}>
         <div className="grid grid-cols-1 md:grid-cols-10 grid-rows-1 items-center justify-between h-full gap-6 px-4 md:px-0">
           {/* Image Section */}
           <div className="col-span-1 md:col-start-1 md:col-end-6 w-full h-full flex justify-center md:justify-start">
@@ -96,38 +96,38 @@ const FamilyAdventures = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-6 mt-20">
-          {PLACES.map((place) => {
-            return (
-              <Card
-                key={place.id}
-                className="relative overflow-hidden rounded-4xl h-96 group cursor-pointer py-0"
-              >
-                {/* Background Image */}
-                <div className="relative w-full h-full">
-                  <Image
-                    src={place.image}
-                    alt={place.name}
-                    fill
-                    loading="lazy"
-                    className="object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                </div>
+        <div className="flex flex-col justify-center items-center gap-10 my-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-6  w-full">
+            {PLACES.map((place) => {
+              return (
+                <Card
+                  key={place.id}
+                  className="relative overflow-hidden rounded-4xl h-96 group cursor-pointer py-0"
+                >
+                  {/* Background Image */}
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={place.image}
+                      alt={place.name}
+                      fill
+                      loading="lazy"
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  </div>
 
-                {/* Text Overlay */}
-                <h3 className="text-xl font-semibold absolute bottom-0 left-0 right-0 p-6 text-white text-center">
-                  Umrah with {place.name} Stay <br /> Starting From £
-                  {place.price}
-                </h3>
-              </Card>
-            );
-          })}
+                  {/* Text Overlay */}
+                  <h3 className="text-xl font-semibold absolute bottom-0 left-0 right-0 p-6 text-white text-center">
+                    Umrah with {place.name} Stay <br /> Starting From £
+                    {place.price}
+                  </h3>
+                </Card>
+              );
+            })}
+          </div>
+          <Button className="btn-main ">Load More</Button>
         </div>
-        <Button className="text-2xl px-28 py-10 self-center rounded-3xl mt-14 sm:mb-20">
-          Load More
-        </Button>
       </ContentLayoutWrapper>
     </section>
   );

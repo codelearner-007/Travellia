@@ -89,12 +89,7 @@ const BookingPage = () => {
               </div>
             ))}
           </div>
-          <Button
-            variant="default"
-            className={"relative px-20 py-6 text-xl   text-white rounded-full"}
-          >
-            Submit Now
-          </Button>
+          <Button className="btn-main">Submit Now</Button>
         </div>
       </ContentLayoutWrapper>
     </section>

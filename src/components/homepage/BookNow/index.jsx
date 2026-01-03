@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
@@ -23,9 +24,7 @@ const index = () => {
             <p className="text-lg lg:text-xl xl:text-2xl font-bold text-gray-200">
               Book your next trip
             </p>
-            <button className="bg-gray-100 text-primary px-12 md:px-24 py-4 rounded-3xl text-xl font-semibold w-fit mt-7 hover:bg-gray-50 transition-colors">
-              Book Now
-            </button>
+            <Button className="btn-main-reverse">Book Now</Button>
           </div>
         </div>
       </div>

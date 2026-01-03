@@ -47,7 +47,7 @@ const index = () => {
             thousands of hotels worldwide.
           </p>
         </div>
-        <Button className={"px-20 py-8 text-2xl rounded-3xl"}>Load More</Button>
+        <Button className="btn-main">Load More</Button>
         <div className="py-8 px-8 sm:p-10 lg:p-16 mx-5 sm:mx-0  rounded-3xl shadow-2xl flex items-center justify-center gap-6 bg-gray-200 w-[90%] sm:w-full absolute -bottom-30 sm:-bottom-40">
           <div className="flex md:flex-row items-center gap-3 sm:gap-8 justify-between md:w-full">
             {STATS.map((stat, index) => (

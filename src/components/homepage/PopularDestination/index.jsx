@@ -77,11 +77,11 @@ const DESTINAION_CARDS_DATA = [
 
 const index = () => {
   return (
-    <section className="w-full min-h-screen pt-5 lg:pt-10">
+    <section className="w-full min-h-screen pt-5 ">
       <ContentLayoutWrapper
-        className={"flex flex-col items-center justify-center gap-3 pt-20"}
+        className={"flex flex-col items-center justify-center gap-10 py-20"}
       >
-        <div className="text-center mb-8">
+        <div className="text-center ">
           <h4 className="text-base text-gray-600 font-semibold uppercase">
             Our popular
           </h4>
@@ -102,9 +102,7 @@ const index = () => {
             </div>
           ))}
         </div>
-        <Button className={"my-10 px-20 py-6 text-xl text-white rounded-full"}>
-          Load More
-        </Button>
+        <Button className={"btn-main"}>Load More</Button>
       </ContentLayoutWrapper>
     </section>
   );

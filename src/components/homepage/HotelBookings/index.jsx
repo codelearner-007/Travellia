@@ -92,9 +92,7 @@ const index = () => {
 
             {/* BUTTON */}
             <div className="sm:col-span-2 flex justify-center sm:justify-start">
-              <Button className="bg-primary px-10 py-6 text-base md:text-lg font-bold rounded-full">
-                Book Now
-              </Button>
+              <Button className="btn-main">Book Now</Button>
             </div>
           </div>
         </div>

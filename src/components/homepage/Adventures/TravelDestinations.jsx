@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ContentLayoutWrapper from "@/components/common/ContentLayoutWrapper";
 import DestinationCard from "./DestinationCard";
+import { Button } from "@/components/ui/button";
 
 const destinations = [
   {
@@ -54,9 +55,7 @@ const TravelDestinations = () => {
 
           {/* View Packages Button */}
           <div className="flex justify-center mt-12">
-            <button className="bg-primary hover:bg-primary/70 text-white px-20 py-4 rounded-3xl text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
-              View Packages
-            </button>
+            <Button className="btn-main">View Packages</Button>
           </div>
         </div>
       </ContentLayoutWrapper>
