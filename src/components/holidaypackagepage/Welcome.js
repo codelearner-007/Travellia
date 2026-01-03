@@ -10,7 +10,7 @@ const Welcome = () => {
   ];
 
   return (
-    <section className="h-[65vh] md:h-[72vh] relative lg:h-[77vh] xl:h-screen max-w-[100vw] flex items-center justify-center ">
+    <section className="h-[65vh] md:h-[72vh] relative lg:h-screen max-w-[100vw] flex items-center justify-center ">
       <CarouselWrapper
         slides={slides}
         className={"!absolute"}

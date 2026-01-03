@@ -7,8 +7,10 @@ const page = () => {
   return (
     <div className="flex flex-col bg-background">
       <Welcome />
-      <ContactUs />
-      <LuxuryAssuring />
+      <div className="flex flex-col md:gap-7 xl:gap-10 -translate-y-10  md:-translate-y-40 lg:-translate-y-32 z-1">
+        <ContactUs />
+        <LuxuryAssuring />
+      </div>
     </div>
   );
 };
