@@ -1,4 +1,5 @@
 import ContentLayoutWrapper from "@/components/common/ContentLayoutWrapper";
+import PackageCard from "@/components/common/PackageCard";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
@@ -10,36 +11,48 @@ const PLACES = [
     name: "Egypt",
     price: 1349,
     image: "/home/adventure/egypt.png",
+    description: "Umrah with Egypt Stay",
+    startingPrice: "Starting From £134",
   },
   {
     id: 2,
     name: "Turkey",
     price: 1349,
     image: "/home/adventure/turkey.png",
+    description: "Umrah with Turkey Stay",
+    startingPrice: "Starting From £134",
   },
   {
     id: 3,
     name: "Dubai",
     price: 1349,
     image: "/home/adventure/dubai.png",
+    description: "Umrah with Dubai Stay",
+    startingPrice: "Starting From £134",
   },
   {
     id: 4,
     name: "Abu Dhabi",
     price: 1349,
     image: "/home/adventure/abu-dhabi.png",
+    description: "Umrah with Abu Dhabi Stay",
+    startingPrice: "Starting From £134",
   },
   {
     id: 5,
     name: "turkey",
     price: 1349,
     image: "/home/adventure/turkey-2.png",
+    description: "Umrah with turkey Stay",
+    startingPrice: "Starting From £134",
   },
   {
     id: 6,
     name: "Dubai",
     price: 1349,
     image: "/home/adventure/dubai-2.png",
+    description: "Umrah with Dubai Stay",
+    startingPrice: "Starting From £134",
   },
 ];
 
@@ -56,6 +69,7 @@ const FamilyAdventures = () => {
         <Image src={"/shapes/paper-plane.png"} fill loading="lazy" />
       </div>
       <ContentLayoutWrapper className={"flex flex-col gap-5 relative z-2"}>
+        {/* Header div */}
         <div className="grid grid-cols-1 md:grid-cols-10 grid-rows-1 items-center justify-between h-full gap-6 px-4 md:px-0">
           {/* Image Section */}
           <div className="col-span-1 md:col-start-1 md:col-end-6 w-full h-full flex justify-center md:justify-start">
@@ -96,6 +110,8 @@ const FamilyAdventures = () => {
             </div>
           </div>
         </div>
+
+        {/* card div */}
         <div className="flex flex-col justify-center items-center gap-10 my-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-6  w-full">
             {PLACES.map((place) => {
@@ -104,24 +120,7 @@ const FamilyAdventures = () => {
                   key={place.id}
                   className="relative overflow-hidden rounded-4xl h-96 group cursor-pointer py-0"
                 >
-                  {/* Background Image */}
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={place.image}
-                      alt={place.name}
-                      fill
-                      loading="lazy"
-                      className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                  </div>
-
-                  {/* Text Overlay */}
-                  <h3 className="text-xl font-semibold absolute bottom-0 left-0 right-0 p-6 text-white text-center">
-                    Umrah with {place.name} Stay <br /> Starting From £
-                    {place.price}
-                  </h3>
+                  <PackageCard data={place} text />
                 </Card>
               );
             })}
