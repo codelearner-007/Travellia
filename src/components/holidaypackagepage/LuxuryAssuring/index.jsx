@@ -118,7 +118,7 @@ const index = () => {
 
   return (
     <section>
-      <ContentLayoutWrapper className="pt-20 sm:pt-5 flex justify-center items-center pb-20">
+      <ContentLayoutWrapper className=" sm:pt-5 flex justify-center items-center ">
         <div className="flex flex-col gap-5 m-auto">
           {/* Header */}
           <div className="flex flex-col items-center">
@@ -154,7 +154,6 @@ const index = () => {
             </p>
           </div>
 
-          {/* Luxury_Assuring_Card_Details */}
           {/* Luxury_Assuring_Card_Details */}
           <div className="flex flex-col gap-14 pt-5">
             {Luxury_Assuring_Card_Details.map((section) => (

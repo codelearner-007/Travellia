@@ -6,7 +6,7 @@ import React from "react";
 
 const LuxuryAssuringCard = ({ card }) => {
   return (
-    <div className="border rounded-xl overflow-hidden shadow-2xl">
+    <div className=" rounded-xl overflow-hidden shadow-2xl">
       <div className="w-full h-[24vh] sm:h-[11vh] lg:h-[18vh] xl:h-[21vh] overflow-hidden">
         <Image
           src={card.image}

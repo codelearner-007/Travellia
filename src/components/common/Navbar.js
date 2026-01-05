@@ -12,7 +12,7 @@ const navLinks = [
   { name: "Hotels", path: "/hotels", icon: "/navbar-icons/five-stars.png" },
   {
     name: "Vacations",
-    path: "/vacations",
+    path: "/holidayPackages",
     icon: "/navbar-icons/beach-umbrella.png",
   },
   {
